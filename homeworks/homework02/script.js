@@ -1,6 +1,3 @@
-// Import stylesheets
-import './style.css';
-
 // 01_1
 var first_number,
     second_number;
