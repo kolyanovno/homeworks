@@ -29,17 +29,13 @@ if (to === 'USD' || to === 'EUR' || to === 'RUR') {
 
 // 02
 
-var sum = +prompt('Enter the sum');
-var years = +prompt('How many years do you want to open a deposit?');
-var percent = Math.round(sum / 100 * 15);
-var result;
-
-function deposite(sum, percent, years) {
+function deposite(sum, percent, years, result) {
+    sum = +prompt('Enter the sum');
+    years = +prompt('How many years do you want to open a deposit?');
+    percent = Math.round(sum / 100 * 15);
     result = Math.round(sum + (percent * years));
 
-    return result;
+    alert('After ' + years + ' years your sum ' + sum + ' will turn to ' + result);
 }
 
-alert('After ' + years + ' years your sum ' + sum + ' will turn to ' + deposite(sum, percent, years));
-
-
+deposite()
